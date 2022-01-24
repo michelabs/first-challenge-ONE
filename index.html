@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codifica Fácil</title>
+    <link rel="stylesheet" type="text/css" href="src/assets/css/style.css">
+  </head>
+  <body>
+       
+    <h1 class="titulo">Codifique sua mensagem aqui</h1>
+
+    <main class="main">
+      <section class="form box">
+        <form action="" id="captura-texto">
+          <label for="input-texto">Por favor, insira apenas letras minúsculas, sem acento</label>
+          <input class="text-input" type="text" name="input-texto" id="input-texto" pattern="[a-z].{1,}" placeholder="Insira o texto aqui">
+          <input class="btn" type="submit" value="Criptografar!" id="btn-cripto">
+          <input class="btn" type="submit" value="Descriptografar!" id="btn-descripto">
+          <input class="btn" type="button" value="Limpar formulário" id="btn-clean">
+        </form>
+      </section>
+
+      <section class="msg box">
+        <label for="input-texto">Mensagem criptografada:</label>
+        <input class="text-input" type="text" id="msg"></input>
+        <input class="btn" type="submit" value="Copiar" id="btn-copy">
+      </section>
+      
+    </main>
+    <footer class="footer">
+      <div class="main">
+          <div class="content">
+            <p className="text-light">App desenvolvido por <a href="https://github.com/michelabs" target="_blank" rel="noreferrer">Michel Silva</a></p>
+            <p className="text-light">First Challenge Oracle ONE<br/></p>
+          </div>
+        </div>
+    </footer> 
+    <script src="script.js"></script>
+
+  </body>  
+  
+
+</html>

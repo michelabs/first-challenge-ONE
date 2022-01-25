@@ -7,7 +7,10 @@ input.addEventListener("keypress", function(e) {
 
 document.getElementById("btn-cripto").addEventListener("click", function (event) {
     event.preventDefault();
-    var textoCodificado = document.getElementById("input-texto").value;    
+    var textoCodificado = document.getElementById("input-texto").value;
+    if(validarEntrada(textoCodificado)){
+        return;
+    };    
     document.getElementById("msg").value = codificar(textoCodificado);
 });
 

@@ -33,31 +33,5 @@ document.getElementById("btn-copy").addEventListener("click", function () {
     alert("O texto foi copiado!");
 });
 
-function checkChar(e) {
-    var char = String.fromCharCode(e.keyCode);
-  
-  console.log(char);
-    var pattern = '[a-z0-9]';
-    if (char.match(pattern)) {
-      return true;
-  }
-}
 
-function codificar(texto) {
-    texto = texto.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
-    return texto;
- };
  
- function descodificar(texto) {
-     texto = texto.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u');  
-     return texto;
- };
- 
- function validarEntrada(entrada) {
-     var retorno = false;
-     if (entrada.toLowerCase() != entrada) {
-         alert("Por favor, insira apenas letras minúsculas e sem acento!");
-         retorno = true;
-     };
-     return retorno;
- };
